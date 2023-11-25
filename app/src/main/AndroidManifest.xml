@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DataTransferDemo"
+        tools:targetApi="31">
+        <provider
+            android:name=".pageb.MyContentProvider"
+            android:authorities="com.example.datatransferdemo.provider"
+            android:exported="true" />
+
+        <activity
+            android:name=".pageb.PageB13"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB12"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB11"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB10"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB9"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB8"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB7"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB6"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB5"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB4"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB3"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB2"
+            android:exported="false" />
+        <activity
+            android:name=".pageb.PageB1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DataTransferDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
